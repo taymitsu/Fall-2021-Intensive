@@ -6,40 +6,108 @@
         <title>Roots & Fur</title>
         <link rel='stylesheet' href='styles.css'>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    </head>
     </head>
 
     <body>
-        <header class="page-header">
+        <header class='page-header'>
+            <h1 data-aos="zoom-in" duration="7000">R&F</h1>
             <nav>
                 <ul>
-                    <li><a href="opening-page">Home</a></li>
-                    <li><a href="about-us">About Us</a></li>
-                    <li><a href="shop"></a>Shop</li>
-                    <li><a href="subscribe">Subscibe</a></li>
+                    <li><a href="#opening-page" data-aos="fade-left"data-aos-delay="150">Home</a></li>
+                    <li><a href="#about-us" data-aos="fade-left"data-aos-delay="200">About Us</a></li>
+                    <li><a href="#shop" data-aos="fade-left"data-aos-delay="350">Shop</a></li>
+                    <li><a href="#doggos" data-aos="fade-left"data-aos-delay="400">Doggos</a></li>
+                    <li><a href="#subscribe" data-aos="fade-left"data-aos-delay="550">Subscribe</a></li>
                 </ul>
             </nav>
         </header>
-
         <main>
-            <section class="opening-page">
+
+            <section id="opening-page">
                 <div>
-                    <h1>Growing a pet-friendly home jungle?</h1>
-                    <p>A curated a list of our favorite houseplants that will keep your fur babies out of harms way</p>
+                    <h1>Roots & Fur</h1>
                 </div>
             </section>
 
-            <section class="about-us">
+            <section id="about-us">
                 <div>
-                    <p>Insert information ABOUT US</p>
+                <h2 data-aos="zoom-in" duation="7000">About Us</h2>
+                <p>These plants are known to be easier to care for
+                though we believe, being a plant parent is no
+                easy feat.</p>
                 </div>
             </section>
 
-            <div class='items' id='items'></div>
+            <section id="shop">
+                <h2 data-aos="zoom-in" duation="7000">Shop</h2>
+                <p>The pandemic has given us a lot of time to step up our plant routines and give those finicky plants a little more love and attention.</p>
+                <ul>
+                    <li class="card2" data-aos="flip-right">
+                        <h3>Calathea Orbifolia</h3>
+                        <img src='images/orbi.jpeg'>
+                        <p>Medium, filtered sunlight</p>
+                        <p>HIGH humidity</p>
+                        <p>Never let soil completely dry!</p>
+                        <p>Needs peat or coco coir in soil to hold moisture</p>
+                        <div class="buttons">
+                            <button class="4"><span>4 Inch</span></button>
+                            <button class="6"><span>6 Inch</span></button>
+                            <button class="Add to Cart"><span>Add to Cart</span></button>
+                        </div>
+                    </li>
+                    <li class="card2" data-aos="flip-left">
+                        <h3>Prayer Plant</h3>
+                        <img src='images/prayer.jpeg'>
+                        <p>Bright, filtered sunlight. Try hanging me in a window!</p>
+                        <p>High humidity. Mist often</p>
+                        <p>Water with warm water, when top 25% of soil is dry</p>
+                        <p>Needs peat or coco coir in soil to hold moisture</p>
+                        <div class="buttons">
+                            <button class="4"><span>4 Inch</span></button>
+                            <button class="6"><span>6 Inch</span></button>
+                            <button class="Add to Cart"><span>Add to Cart</span></button>
+                        </div>
+                    </li>
+                    <li class="card2" data-aos="flip-right">
+                        <h3>Boston Fern</h3>
+                        <img src='images/fern.jpeg'>
+                        <p>High humidity and regular mistings</p>
+                        <p>Tempratures between 65-75 degrees, 95 can be harmful</p>
+                        <p>Soil MUST remain moist</p>
+                        <p>Do NOT place near doors, drafty ares or vents/AC units</p>
+                        <div class="buttons">
+                            <button class="4"><span>4 Inch</span></button>
+                            <button class="6"><span>6 Inch</span></button>
+                            <button class="Add to Cart"><span>Add to Cart</span></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-                <section class="subscribe">
-                    <h2>Stay In Touch</h2>
-                    <p>Sign up and receive our monthly newsletter!</p>
+            <section id="doggos">
+                <div>
+                    <h1>Happy Doggos & Plants</h1>
+                    <div class=”gallery”>
+                        <img src="images/daxi.jpg" class="imga">
+                        <img src="images/pups.png" class="imga">
+                        <img src="images/ppppupss.jpeg" class="imga">
+                        <img src="images/ppups.jpeg" class="imgb">
+                        <img src="images/tyson.png" class="imgb">
+                        <img src="images/pppups.jpeg" class="imgb">
+                        <img src="images/cooperside.jpg" class="imgc">
+                        <img src="images/pupssss.jpeg" class="imgc">
+                        <img src="images/IMG_2187.jpg" class="imgc">
+                    </div>
+                </div>
+            </section>
 
+            <footer id="subscribe">
+                <h2>Stay In Touch</h2>
+                <p>Sign up and receive our monthly newsletter!</p>
                     <form>
                         <label>
                             <span>Name</span>
@@ -52,10 +120,8 @@
                         </label>
                         <button type="submit">Send</button>
                     </form>
-                    
-                </section>
-            </section>
         </main>
+        
         <script src='scripts.js' type="module"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
