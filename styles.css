@@ -183,3 +183,12 @@ nav ul.dropbtn {
     justify-content: flex-start;
     text-align: flex-start;
 }
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
