@@ -35,6 +35,7 @@ nav, main > section {
 .page-header nav{
     font-size:  20px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 90;
 }
 
 .page-header ul{
@@ -91,4 +92,21 @@ nav ul a:hover {
 }
 #about-us {
     background-color:  #EFE0D9;
+}
+
+.custom-shape-divider-bottom-1634083859 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1634083859 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 281px;
+    transform: rotateY(180deg);
 }
