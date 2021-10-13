@@ -11,6 +11,78 @@ nav, main > section {
     overflow: auto;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color:  #EFE0D9;
+}
+
+nav ul a {
+    padding: 1em;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin: 1.7rem;
+}
+
+nav ul a:hover {
+    color: #4A6C30;
+}
+
+button.dropbtn:hover{
+    color: #4A6C30;
+}
+
+button.dropbtn{
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24.5px;
+    background-color: #EFE0D9;
+    margin: 1.4rem;
+    padding: 0.6em;
+}
+
+nav ul.dropbtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    background-color: #EFE0D9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
 .page-header{
     display: flex;
     flex-direction: row;
@@ -44,30 +116,16 @@ nav, main > section {
     list-style: none;
 }
 
-.page-header a{
+.page-header a {
     display: block;
     padding: 0.5em;
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    background-color:  #EFE0D9;
-}
-
-nav ul a {
-    padding: 1em;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    color: black;
-    margin: 1.7rem;
-}
-
-nav ul a:hover {
-    color: #4A6C30;
+.dropdown-content a{
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
 }
 
 #opening-page {
@@ -94,29 +152,34 @@ nav ul a:hover {
     background-color:  #EFE0D9;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
 #low-main {
     background-color: #EFE0D9;
+}
+
+.card {
+    display: inline-block;
+    margin: auto;
+    width: 520px;
+    height: 450px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
+    line-height: 0;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: black;
+    margin: 1rem;
+    display: flex; 
+    justify-content: center;
+}
+
+.card h3, .card p {
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    justify-content: flex-start;
+    text-align: flex-start;
 }
