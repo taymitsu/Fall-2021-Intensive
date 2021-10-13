@@ -94,19 +94,29 @@ nav ul a:hover {
     background-color:  #EFE0D9;
 }
 
-.custom-shape-divider-bottom-1634083859 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.custom-shape-divider-bottom-1634083859 svg {
-    position: relative;
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 281px;
-    transform: rotateY(180deg);
+    text-align: left;
+}
+
+#low-main {
+    background-color: #EFE0D9;
 }
