@@ -13,7 +13,7 @@ const data = [{
   }, {
     "id": 3,
     "name": 'Boston Fern',
-    "image": "images/angry_1.gif",
+    "image": "images/bost",
     "desc": "Anger is like a storm rising up from the bottom of your consciousness. When you feel it coming, turn your focus to your breath.",
     "price": 5.99
   }, {

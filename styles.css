@@ -184,27 +184,22 @@ nav ul.dropbtn {
     text-align: flex-start;
 }
 
-.cart-page{
-    margin: 80px auto;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
 .card img {
-    width: 290px;
-    margin-top: 47px;
+    height: 450px;
 }
 
-.card {
+.card{
     position: relative;
     margin: auto;
     overflow: hidden;
-    width: 520px;
-    height: 350px;
+    width: 700px;
+    height: 450px;
     background: white;
     box-shadow: 5px 5px 15px rgba(rose, .5);
     border-radius: 10px;
-  }
+}
+
+.card h3{
+    display: flex; 
+    justify-content: flex-end;
+}
