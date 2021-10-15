@@ -199,9 +199,11 @@ nav ul.dropbtn {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
 }
+
 .pf-card, .lm-card{
-    display: grid;
-    justify-content: center;
+    display: row;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
 }
 
 .pf-card img, .lm-card img{
@@ -218,6 +220,12 @@ nav ul.dropbtn {
     color: #4A6C30;
     text-decoration: none;
     text-align: center;
+}
+
+#low-main{
+    background-image: url(images/Untitled_Artwork\ 4.jpg);
+    background-size: cover;
+
 }
 #doggos{
     background-image: url(images/Untitled_Artwork\ 3.jpg);
