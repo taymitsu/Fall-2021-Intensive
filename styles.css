@@ -162,32 +162,34 @@ nav ul.dropbtn {
 
 #about-us p {
     font-family: 'Roboto', sans-serif;
-    font-size:  30px;
+    font-size:  25px;
     border-radius: 10px;
+    margin: 1rem;
     width: 580px;
-    height: 210px;
-    padding: 1rem;
+    height: 150px;
 }
+
 
 #low-main, #pet-friend {
     background-color: #EFE0D9;
 }
 
-.pf-card, .lm-card{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    grid-gap: none;
+.pf-card {
+    position: absolute;
+    left: 1300px;
+    top: 1500px;
+}
+
+.lm-card{
+    position: absolute;
+    left: 950px;
+    top: 1500px;
 }
 
 .pf-card img, .lm-card img{
     width: 300px;
     height: 300px;
-    border-radius: 223%;
-    border-style: solid;
-    border-width: thin;
-    border-color: #4A6C30;
+    border-radius: 10%;
 }
 .pf-card a, .lm-card a{
     font-family: 'Roboto';
@@ -244,6 +246,7 @@ nav ul.dropbtn {
 #low-main{
     background-image: url(images/Untitled_Artwork\ 4.jpg);
     background-size: cover;
+    
 
 }
 #doggos{
@@ -255,7 +258,10 @@ nav ul.dropbtn {
 #doggos img{
     width: 580px;
     height: 500px;
-    border-radius: 5%
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
 }
 
 #doggos h1{
@@ -264,34 +270,37 @@ nav ul.dropbtn {
     padding: 1rem;
 }
 
-#doggos p{
+.featured p{
+    font-family: 'Roboto';
+    font-size: 25px;
+    justify-content: center;
     background-color: white;
     box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
     border-radius: 10px;
     width: 580px;
     height: 210px;
-    margin: 1rem;
+    position: relative;
+    left: 750px;
+    top: 15px;
+    text-align: center;
 }
 
-.featured {
-    display: grid;
+.featured img{
     position: relative;
-    left: 505px;
-    top: 140px;
+    left: 305px;
+    top: 100px;
 }
 
 .featured h2{
     font-family: 'Syncopate', sans-serif;
-    font-size: 40px;
-    text-align: center;
+    font-size: 120px;
+    position: relative;
+    left: 305px;
+    top: 80px;
+    text-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
 
 }
 
-.featured p{
-    font-family: 'Roboto';
-    font-size: 25px;
-    text-align: center;
-}
 
 #pet-friend h2, #low-main h2{
     font-family: 'Playfair Display', serif;
