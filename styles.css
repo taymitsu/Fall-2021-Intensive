@@ -169,34 +169,42 @@ nav ul.dropbtn {
     height: 150px;
 }
 
-
-#low-main, #pet-friend {
-    background-color: #EFE0D9;
+#about-us h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    left: 970px;
+    top: 1400px;
 }
 
 .pf-card {
     position: absolute;
     left: 1300px;
     top: 1500px;
+    list-style: none;
 }
 
 .lm-card{
     position: absolute;
     left: 950px;
     top: 1500px;
+    list-style: none;
 }
 
 .pf-card img, .lm-card img{
     width: 300px;
     height: 300px;
-    border-radius: 10%;
+    border-radius: 12%;
 }
 .pf-card a, .lm-card a{
-    font-family: 'Roboto';
+    font-family: 'Playfair Display', serif;
     font-size: 25px;
     color: #4A6C30;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
 }
 
 .items, .items-two {
@@ -213,28 +221,21 @@ nav ul.dropbtn {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
     border-radius: 10px;
-    line-height: 0;
+    display: flex;
+    float: left;
 }
 
 .item button{
     background-color:#EFE0D9;
     border: none;
     font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 30px;
     margin: 1.5px;
-    
-    display: flex;
-    align-self: flex-end;
+    text-transform: uppercase;
 }
 
 .item button:hover{
     color: #4A6C30;
-}
-
-.desc {
-    font-family: 'Roboto';
-    font-size: 15px;
 }
 
 .item p{
@@ -243,26 +244,12 @@ nav ul.dropbtn {
     justify-content: flex-end;
 }
 
-#low-main{
-    background-image: url(images/Untitled_Artwork\ 4.jpg);
-    background-size: cover;
-    
-
-}
 #doggos{
     background-image: url(images/Untitled_Artwork\ 3.jpg);
     background-size: cover;
     background-color: white;
 }
 
-#doggos img{
-    width: 580px;
-    height: 500px;
-    border-radius: 5%;
-    background-color: white;
-    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
-    border-radius: 10px;
-}
 
 #doggos h1{
     font-family: 'Playfair Display', serif;
@@ -285,6 +272,16 @@ nav ul.dropbtn {
     text-align: center;
 }
 
+
+#doggos img{
+    width: 580px;
+    height: 500px;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
+}
+
 .featured img{
     position: relative;
     left: 305px;
@@ -292,15 +289,13 @@ nav ul.dropbtn {
 }
 
 .featured h2{
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     font-size: 120px;
     position: relative;
-    left: 305px;
+    left: 805px;
     top: 80px;
     text-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
-
 }
-
 
 #pet-friend h2, #low-main h2{
     font-family: 'Playfair Display', serif;
@@ -308,9 +303,26 @@ nav ul.dropbtn {
     padding: 1rem;
 }
 
+#low-main{
+    background-image: url(images/Untitled_Artwork\ 4.jpg);
+    background-size: cover;
+}
+
+#pet-friend{
+    background-image: url(images/waves2.svg);
+    background-size: cover;
+
+}
 #cart h1{
     font-family: 'Playfair Display', serif;
     font-size: 65px;
     padding: 1rem;
     text-align: center;
+}
+
+#pet-friend > div {
+    font-family: 'Roboto';
+    font-size: 30px;
+    display: grid;
+
 }

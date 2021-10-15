@@ -1,4 +1,5 @@
 const dataTwo = [{
+    
     "id": 7,
     "name": 'Sansaveria',
     "image": "images/whitesnake.jpeg",
