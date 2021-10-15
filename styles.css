@@ -217,33 +217,6 @@ nav ul.dropbtn {
     grid-gap: 2em;
 }
 
-.item{
-    background-color: white;
-    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
-    border-radius: 10px;
-    display: flex;
-    float: left;
-}
-
-.item button{
-    background-color:#EFE0D9;
-    border: none;
-    font-family: 'Roboto';
-    font-size: 30px;
-    margin: 1.5px;
-    text-transform: uppercase;
-}
-
-.item button:hover{
-    color: #4A6C30;
-}
-
-.item p{
-    font-size: 12px;
-    display: flex;
-    justify-content: flex-end;
-}
-
 #doggos{
     background-image: url(images/Untitled_Artwork\ 3.jpg);
     background-size: cover;
@@ -297,6 +270,33 @@ nav ul.dropbtn {
     text-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
 }
 
+.item{
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
+    display: flex;
+    float: left;
+}
+
+.item button{
+    background-color:#EFE0D9;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin: 1.5px;
+    text-transform: uppercase;
+}
+
+.item button:hover{
+    color: #4A6C30;
+}
+
+.item > div{
+    font-size: 12px;
+    display: grid;
+    grid-template-rows: auto;
+}
+
 #pet-friend h2, #low-main h2{
     font-family: 'Playfair Display', serif;
     font-size: 65px;
@@ -318,11 +318,4 @@ nav ul.dropbtn {
     font-size: 65px;
     padding: 1rem;
     text-align: center;
-}
-
-#pet-friend > div {
-    font-family: 'Roboto';
-    font-size: 30px;
-    display: grid;
-
 }

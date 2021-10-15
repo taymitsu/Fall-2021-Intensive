@@ -20,7 +20,7 @@ for (let i = 0; i < data.length; i += 1) {
   itemsContainer.appendChild(newDiv);
 
   //NAME
-  const name = document.createElement('P');
+  const name = document.createElement('h2');
   name.innerText = data[i].name;
   newDiv.appendChild(name);
   ////////////////DESCRIPTION
@@ -28,10 +28,9 @@ for (let i = 0; i < data.length; i += 1) {
   desc.innerText = data[i].desc;
   newDiv.appendChild(desc);
   ////////////////PRICE
-  const price = document.createElement('P');
+  const price = document.createElement('h3');
   price.innerText = data[i].price;
   newDiv.appendChild(price);
-
    ////////////////button
   const button = document.createElement('button');
   button.id = data[i].name;
