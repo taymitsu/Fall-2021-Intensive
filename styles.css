@@ -204,10 +204,9 @@ nav ul.dropbtn {
     text-decoration: none;
     display: flex;
     justify-content: center;
-
 }
 
-.items, .items-two {
+.items, .items-two{
     font-family: 'Roboto';
     font-size: 25px;
     color: black;
