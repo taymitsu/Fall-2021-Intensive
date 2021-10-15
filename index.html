@@ -9,6 +9,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
     </head>
     </head>
 
@@ -19,6 +25,7 @@
                 <ul>
                     <li><a href="#index-html" data-aos="fade-left"data-aos-delay="150">Home</a></li>
                     <li><a href="#about-us" data-aos="fade-left"data-aos-delay="200">About Us</a></li>
+                    <li><a href="#doggos" data-aos="fade-left"data-aos-delay="700">Dog of the Week</a></li>
                     <li class="shop">
                         <div class="dropdown">
                             <button class="dropbtn" data-aos="fade-left"data-aos-delay="400">Shop Products ▾
@@ -28,8 +35,7 @@
                                 <a href="#pet-friend">Pet Friendly Favorites</a>
                             </div>
                         </div>
-                    <li><a href="cart.html"data-aos="fade-left"data-aos-delay="550">Cart</a></li>
-                    <li><a href="#doggos" data-aos="fade-left"data-aos-delay="700">Doggos</a></li>
+                    <li><a href="#cart"data-aos="fade-left"data-aos-delay="550">Cart</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,28 +49,55 @@
 
             <section id="about-us">
                 <div>
-                <h2 data-aos="zoom-in" duration="7000">About Us</h2>
-                <p>At Roots & Fur, we believe in the importance of nurturing your roots. Building a supportive environment to encourage growth and love is one of our biggest joys in life.</p>
-                <p>We have partnered with Humane Society of Silicon Valley to support animals in their care and give them the best shot at finding their forever home. 30% of each purchase is donated to the HSSV. </p>
-                <p>The inflation of houseplants has increased during the pandemic due to a spike in interest to decorate your home. Many are outraged at unrealistic prices now viewed as “normal” to many of the plant community newcomers. We are working to set a normal standard for plant costs, while still giving back to animals in need. Shop with a purpose and no buyer’s remorse. </p>
+                    <h2>Who is R&F?</h2>
+                    <p>At Roots & Fur, we believe in the importance of nurturing your roots. Building a supportive environment to encourage growth and love is one of our biggest joys in life.</p>
+                    <p>We have partnered with Humane Society of Silicon Valley to support animals in their care and give them the best shot at finding their forever home. 30% of each purchase is donated to the HSSV. </p>
+                    <p>The inflation of houseplants has increased during the pandemic due to a spike in interest to decorate your home. Many are outraged at unrealistic prices now viewed as “normal” to many of the plant community newcomers. We are working to set a normal standard for plant costs, while still giving back to animals in need. Shop with a purpose and no buyer’s remorse. </p>
+                </div>
 
+                <ul>
+                    <li class="pf-card">
+                        <img src="images/leiayes.png">
+                        <a href="#pet-friend">Pet-Friendly Picks</a>
+                    </li>
+
+                    <li class="lm-card">
+                        <img src="images/low-main.jpeg">
+                        <a href="#low-main">Low Maintenance Favs</a>
+                    </li>
+                  </ul>
+
+            </section>
+
+            <section id="doggos">
+                <div>
+                    <h1>Animal Feature of the Week</h1>
+                    <div class="featured">
+                        <h2>Tyson</h2>
+                        <img src="images/featured.png">
+                        <p>I am a spunky 2 year-old German Shephard mix.</p>
+                        <p>I have lots of energy and enjoy spending my day </p>
+                        <p>squirrel hunting! I am good with kids and LOVE cuddling!</p>
+                        <p>As much as I love cuddling, my bedroom (kennel) is one</p>
+                        <p>of my favorite places. </p>
+                        <p>I can't wait to find my forever home!</p>
+                    </div>
                 </div>
             </section>
 
             <section id="pet-friend">
-                <div class='items' id='items'>
                 <h2 data-aos="zoom-in" duation="7000">Pet-Friendly Favorites</h2>
+                <div class='items' id='items'>
                 </div>
             </section>   
                 
-
             <section id="low-main">
                 <div class='items' id='items'>
                 <h2 data-aos="zoom-in" duration="7000">Low Maintenance</h2>
                 </div>
             </section>
 
-            <section id="cart.html">
+            <section id="cart">
                 <div id='cart-qty'>
                     <!-- cart qty here -->
                   </div>
@@ -74,14 +107,6 @@
                   <div id='cart-total'>
                     <!-- cart total -->
                   </div>
-            </section>
-
-            <section id="doggos">
-                <div>
-                    <h1>Happy Doggos & Plants</h1>
-                    <div class=”gallery”>
-                    </div>
-                </div>
             </section>
 
             <footer id="subscribe">
@@ -100,7 +125,7 @@
                         <button type="submit">Send</button>
                     </form>
         </main>
-        <script src='scripts.js' type="module"></script>
+        <script src="scripts.js" type="module"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
         AOS.init();

@@ -149,7 +149,25 @@ nav ul.dropbtn {
     display: flex;
 }
 #about-us {
-    background-color:  #EFE0D9;
+    background-image: url(images/wave.svg);
+    background-size: cover;
+    background-color: white;
+}
+
+#doggos{
+    background-image: url(images/Untitled_Artwork\ 3.jpg);
+    background-size: cover;
+    background-color: white;
+}
+#about-us h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+#about-us p {
+    font-family: 'Roboto', sans-serif;
+    font-size:  30px;
 }
 
 #low-main {
@@ -167,7 +185,7 @@ nav ul.dropbtn {
     line-height: 0;
 }
 
-.card h3 {
+.items {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
     color: black;
@@ -175,31 +193,57 @@ nav ul.dropbtn {
     display: flex; 
     justify-content: center;
 }
+.pf-card, .lm-card{
+    display: grid;
+    justify-content: center;
+}
 
-.card h3, .card p {
-    margin: 1rem;
+.pf-card img, .lm-card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 223%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #4A6C30;
+}
+.pf-card a, .lm-card a{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #4A6C30;
+    text-decoration: none;
+    text-align: center;
+}
+
+#doggos img{
+    width: 580px;
+    height: 500px;
+    border-radius: 5%
+}
+
+#doggos h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
     padding: 1rem;
-    color: black;
-    justify-content: flex-start;
-    text-align: flex-start;
 }
 
-.card img {
-    height: 450px;
-}
-
-.card{
+.featured {
+    display: grid;
     position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: 700px;
-    height: 450px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(rose, .5);
-    border-radius: 10px;
+    left: 505px;
+    top: 140px;
 }
 
-.card h3{
-    display: flex; 
-    justify-content: flex-end;
+.featured h2{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+
 }
+
+.featured p{
+    font-family: 'Roboto';
+    font-size: 25px;
+    text-align: center;
+}
+

@@ -13,22 +13,22 @@ for (let i = 0; i < data.length; i += 1) {
   newDiv.className = 'item'
   const img = document.createElement('img');
   img.src = data[i].image;
-  img.width = 380;
-  img.height = 450;
+  img.width = 300;
+  img.height = 300;
   newDiv.appendChild(img);
   //console.log(img)
   itemsContainer.appendChild(newDiv);
 
-//DESCRIPTION
+  ////////////////DESCRIPTION
   const desc = document.createElement('P');
   desc.innerText = data[i].desc;
   newDiv.appendChild(desc);
-//PRICE
+  ////////////////PRICE
   const price = document.createElement('P');
   price.innerText = data[i].price;
   newDiv.appendChild(price);
 
- //BUTTON
+   ////////////////button
   const button = document.createElement('button');
   button.id = data[i].name;
   button.dataset.price = data[i].price;
@@ -46,7 +46,7 @@ all_items_button.forEach(elt => elt.addEventListener('click', () => {
 }))
 
 const cart = [];
-//handle change event
+///////////////////handle change event
 itemList.onchange = function(e) {
   if (e.target && e.target.classList.contains('update')) {
     const name = e.target.dataset.name
@@ -55,7 +55,7 @@ itemList.onchange = function(e) {
   }
 }
 
-//handles clicks
+//--------------handles clicks
 itemList.onclick = function(e) {
   //console.log("clicked list!")
   //console.log(e.target)
@@ -72,12 +72,12 @@ itemList.onclick = function(e) {
 }
 
 //ADD FORM-----------------------------------------------------------------------------------------
-addForm.onsubmit = function(e) {
-  e.preventDefault()
-  const name = itemName.value
-  const price = itemPrice.value
-  addItem(name, price)
-}
+//addForm.onsubmit = function(e) {
+  //e.preventDefault()
+  //const name = itemName.value
+  //const price = itemPrice.value
+  //addItem(name, price)
+//}
 
 //ADD ITEM-----------------------------------------------------------------------------------------
 function addItem(name, price) {
@@ -88,6 +88,7 @@ function addItem(name, price) {
       return //stop code, incorrect duplicates 
     }
   }
+   
   const item = {name, price, qty: 1} //qty must have a value
   cart.push(item)
 }
@@ -118,7 +119,7 @@ function updateCart(name, qty) {
       if(qty < 1) {
         removeItem(name)
         return
-        }
+      }
       cart[i].qty = qty
       showItems()
       return
