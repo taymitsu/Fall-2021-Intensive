@@ -18,7 +18,11 @@ for (let i = 0; i < dataTwo.length; i += 1) {
   newDiv.appendChild(img);
   //console.log(img)
   itemsContainer.appendChild(newDiv);
-
+  
+//NAME
+const name = document.createElement('P');
+name.innerText = dataTwo[i].name;
+newDiv.appendChild(desc);
   ////////////////DESCRIPTION
   const desc = document.createElement('P');
   desc.innerText = dataTwo[i].desc;

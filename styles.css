@@ -163,20 +163,38 @@ nav ul.dropbtn {
 #about-us p {
     font-family: 'Roboto', sans-serif;
     font-size:  30px;
+    border-radius: 10px;
+    width: 580px;
+    height: 210px;
+    padding: 1rem;
 }
 
 #low-main, #pet-friend {
     background-color: #EFE0D9;
 }
-.card {
-    display: inline-block;
-    margin: auto;
-    width: 520px;
-    height: 450px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
-    border-radius: 10px;
-    line-height: 0;
+
+.pf-card, .lm-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: none;
+}
+
+.pf-card img, .lm-card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 223%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #4A6C30;
+}
+.pf-card a, .lm-card a{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #4A6C30;
+    text-decoration: none;
+    text-align: center;
 }
 
 .items, .items-two {
@@ -196,26 +214,31 @@ nav ul.dropbtn {
     line-height: 0;
 }
 
-.pf-card, .lm-card{
-    display: row;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 3rem;
+.item button{
+    background-color:#EFE0D9;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 1.5px;
+    
+    display: flex;
+    align-self: flex-end;
 }
 
-.pf-card img, .lm-card img{
-    width: 300px;
-    height: 300px;
-    border-radius: 223%;
-    border-style: solid;
-    border-width: thin;
-    border-color: #4A6C30;
-}
-.pf-card a, .lm-card a{
-    font-family: 'Roboto';
-    font-size: 25px;
+.item button:hover{
     color: #4A6C30;
-    text-decoration: none;
-    text-align: center;
+}
+
+.desc {
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.item p{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #low-main{
@@ -241,6 +264,15 @@ nav ul.dropbtn {
     padding: 1rem;
 }
 
+#doggos p{
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
+    width: 580px;
+    height: 210px;
+    margin: 1rem;
+}
+
 .featured {
     display: grid;
     position: relative;
@@ -261,13 +293,7 @@ nav ul.dropbtn {
     text-align: center;
 }
 
-#pet-friend h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 65px;
-    padding: 1rem;
-}
-
-#low-main h2{
+#pet-friend h2, #low-main h2{
     font-family: 'Playfair Display', serif;
     font-size: 65px;
     padding: 1rem;
@@ -278,23 +304,4 @@ nav ul.dropbtn {
     font-size: 65px;
     padding: 1rem;
     text-align: center;
-}
-
-.item button{
-    background-color:#EFE0D9;
-    border: none;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: bolder;
-    margin: 1.5px;
-    display: flex;
-}
-
-.item button:hover{
-    color: #4A6C30;
-}
-
-.desc {
-    font-family: 'Roboto';
-    font-size: 15px;
 }
