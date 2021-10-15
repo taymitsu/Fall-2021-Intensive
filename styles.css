@@ -168,7 +168,6 @@ nav ul.dropbtn {
 #low-main, #pet-friend {
     background-color: #EFE0D9;
 }
-
 .card {
     display: inline-block;
     margin: auto;
@@ -180,9 +179,9 @@ nav ul.dropbtn {
     line-height: 0;
 }
 
-.items {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
+.items, .items-two {
+    font-family: 'Roboto';
+    font-size: 25px;
     color: black;
     margin: 1rem;
     display: grid;
@@ -190,14 +189,11 @@ nav ul.dropbtn {
     grid-gap: 2em;
 }
 
-.items-two {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    color: black;
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
+.item{
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 10px;
+    line-height: 0;
 }
 
 .pf-card, .lm-card{
@@ -265,3 +261,40 @@ nav ul.dropbtn {
     text-align: center;
 }
 
+#pet-friend h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    padding: 1rem;
+}
+
+#low-main h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    padding: 1rem;
+}
+
+#cart h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item button{
+    background-color:#EFE0D9;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 1.5px;
+    display: flex;
+}
+
+.item button:hover{
+    color: #4A6C30;
+}
+
+.desc {
+    font-family: 'Roboto';
+    font-size: 15px;
+}
