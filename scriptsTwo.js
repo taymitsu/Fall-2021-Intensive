@@ -1,6 +1,6 @@
-import data from './data.js'
+import dataTwo from './dataTwo.js'
 
-const itemsContainer = document.querySelector('#items');
+const itemsContainer = document.querySelector('#items-two');
 const itemList = document.getElementById('item-list');
 const cartQty = document.getElementById('cart-qty');
 const cartTotal = document.getElementById('cart-total');
@@ -8,11 +8,11 @@ const addForm = document.getElementById('add-form');
 const itemName = document.getElementById('item-name');
 const itemPrice = document.getElementById('item-price');
 
-for (let i = 0; i < data.length; i += 1) {
+for (let i = 0; i < dataTwo.length; i += 1) {
   const newDiv = document.createElement('div');
   newDiv.className = 'item'
   const img = document.createElement('img');
-  img.src = data[i].image;
+  img.src = dataTwo[i].image;
   img.width = 300;
   img.height = 300;
   newDiv.appendChild(img);
@@ -21,17 +21,17 @@ for (let i = 0; i < data.length; i += 1) {
 
   ////////////////DESCRIPTION
   const desc = document.createElement('P');
-  desc.innerText = data[i].desc;
+  desc.innerText = dataTwo[i].desc;
   newDiv.appendChild(desc);
   ////////////////PRICE
   const price = document.createElement('P');
-  price.innerText = data[i].price;
+  price.innerText = dataTwo[i].price;
   newDiv.appendChild(price);
 
    ////////////////button
   const button = document.createElement('button');
-  button.id = data[i].name;
-  button.dataset.price = data[i].price;
+  button.id = dataTwo[i].name;
+  button.dataset.price = dataTwo[i].price;
   button.innerHTML = 'Add to Cart';
   newDiv.appendChild(button);
 }
@@ -41,7 +41,7 @@ const all_items_button = Array.from(document.querySelectorAll('button'))
 console.log(all_items_button)
 
 all_items_button.forEach(elt => elt.addEventListener('click', () => {
-  addItem(elt.getAttribute('id'), elt.getAttribute('data-price'))
+  addItem(elt.getAttribute('id'), elt.getAttribute('dataTwo-price'))
   showItems()
 }))
 
@@ -49,7 +49,7 @@ const cart = [];
 ///////////////////handle change event
 itemList.onchange = function(e) {
   if (e.target && e.target.classList.contains('update')) {
-    const name = e.target.dataset.name
+    const name = e.target.dataTwoset.name
     const qty = parseInt(e.target.value)
     updateCart(name, qty)
   }
@@ -60,13 +60,13 @@ itemList.onclick = function(e) {
   //console.log("clicked list!")
   //console.log(e.target)
   if (e.target && e.target.classList.contains('remove')) {
-    const name = e.target.dataset.name
+    const name = e.target.dataTwoset.name
     removeItem(name)
   } else if (e.target && e.target.classList.contains('add-one')) {
-    const name = e.target.dataset.name
+    const name = e.target.dataTwoset.name
     addItem(name)
   } else if (e.target && e.target.classList.contains('remove-one')) { 
-    const name = e.target.dataset.name
+    const name = e.target.dataTwoset.name
     removeItem(name, 1)
   }
 }
@@ -102,10 +102,10 @@ function showItems() {
   for (let i = 0; i < cart.length; i +=1) {
     const { name, price, qty } =  cart[i]
     itemStr += `<li>${name} $${price} x ${qty} = $${qty * price}
-    <button class="remove" data-name="${name}">Remove</button>
-    <button class="add-one" data-name="${name}">+</button>
-    <button class="remove-one" data-name="${name}">-</button>
-    <input class="update" type="number" data-name"${name}">
+    <button class="remove" dataTwo-name="${name}">Remove</button>
+    <button class="add-one" dataTwo-name="${name}">+</button>
+    <button class="remove-one" dataTwo-name="${name}">-</button>
+    <input class="update" type="number" dataTwo-name"${name}">
     </li>`
   }
   itemList.innerHTML = itemStr
@@ -158,4 +158,3 @@ function removeItem(name, qty = 0) { //zero is default value
     }
   }
 }
-
